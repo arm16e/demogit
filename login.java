@@ -19,9 +19,11 @@ public class login{
 
         UserAccount login = new UserAccount(username, password);
 
-        if(login.checkPassword())
+        if(login.checkPassword()){
             System.out.println("You are logged in!");
-        else
+	}
+        else{
             System.out.println("The username and password you entered are incorrect.");
+	}
     }
 }
